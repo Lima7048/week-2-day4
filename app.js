@@ -20,9 +20,25 @@ game()
 // event addmore(){
 //     setInterval
 // }
-setTimeout(() => {
-    console.log(cookies);
-  }, 500);
+// setInterval((buy1) => {
+//     cookies =+ cookies + (cookies);
+//     console.log(cookies);
+//   }, 5000);
+
+// Let buy1 = 1;
+// const buy1 = document.getElementById("buy1");
+
+.buy1.addEventListener("click", function() { //future salima u added a dot to stop the numbers from logging
+    setInterval((buy1) => {
+        cookies =+ cookies ;
+        console.log(cookies);
+      }, 000) } )
+
+
+      
+    // cookies == add1 +1
+    // cookieDisplay.innerText= add1
+
 
 
 
