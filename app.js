@@ -17,11 +17,39 @@ function game() {
 }
 game()
 
-const cookieCounter = localStorage.getItem("cookieCounter");
-if (cookieCounter) {
-    const input = document.querySelector("input");
-    input.value = cookieCounter;
-}
+// event addmore(){
+//     setInterval
+// }
+setTimeout(() => {
+    console.log(cookies);
+  }, 500);
+
+
+
+
+
+// cookieDisplay.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   localStorage.setItem("cookieDisplay", cookieDisplay);
+// });
+
+
+
+//  cookieDisplay = localStorage.getItem("cookieDisplay");
+// if (cookieDisplay) {
+//     const input = document.querySelector("input");
+//     input.value = cookieDisplay;
+// }
+
+
+// function savePreferences(event) {
+//   event.preventDefault();
+
+//   // so when we save it, we stringify it
+//   localStorage.setItem("cookieDisplay", JSON.stringify(preferences));
+// }
+
+// form.addEventListener("submit", cookies);
 
 
 

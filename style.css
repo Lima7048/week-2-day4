@@ -4,10 +4,12 @@
 }
 body {
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(#e664a1, #9198e5);
+  position: relative;
 }
 h1 {
   font-family: "Moirai One", system-ui;
@@ -22,21 +24,30 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(193, 151, 211);
   border-radius: 190px;
   margin: 0;
-  /* animation-duration: 3s;
-  animation-name: slidein; */
+  animation: pulse;
+  animation: shake 10s ease infinite alternate;
 }
-/* @keyframes slidein {
-  from {
-    transform: translateX(0%);
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
   }
-
-  to {
-    transform: translateX(50%);
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
   }
-} */
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 button {
   background-color: rgb(252, 198, 251);
@@ -63,4 +74,28 @@ button {
   font-family: "Courier New", Courier, monospace;
   animation-duration: 3s;
   /* animation-name: slidein; */
+}
+
+.footer {
+  top: 150px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-style: oblique;
+  color: rgb(183, 255, 132);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid blue;
+  width: 50px;
+  margin: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
 }
