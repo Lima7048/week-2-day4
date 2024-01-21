@@ -17,6 +17,11 @@ function game() {
 }
 game()
 
+
+img.addEventListener("click", function(changeColour){
+    img.style.background = "#e664a1"
+    console.log("click")
+})
 // event addmore(){
 //     setInterval
 // }
@@ -28,16 +33,37 @@ game()
 // Let buy1 = 1;
 // const buy1 = document.getElementById("buy1");
 
-.buy1.addEventListener("click", function() { //future salima u added a dot to stop the numbers from logging
+buy1.addEventListener("click", function() { 
     setInterval((buy1) => {
         cookies =+ cookies ;
         console.log(cookies);
-      }, 000) } )
+      }, 1000) } )
+
+buy10.addEventListener("click", function() { 
+    setInterval((buy2) => {
+        cookies =+ + 10 ;
+        console.log(cookies);
+      }, 1000) } )
+
+buy100.addEventListener("click", function() { 
+    setInterval((buy3) => {
+            cookies =+ 100 ;
+            console.log(cookies);
+          }, 1000) } )
 
 
-      
-    // cookies == add1 +1
-    // cookieDisplay.innerText= add1
+ const resetBtn = document.getElementById("resetBtn") 
+
+
+//  resetBtn.addEventListener("click",function()  {
+//     setTimeout(() => {
+//         resetBtn = 0
+//     }, timeout);
+
+//  })
+  
+
+
 
 
 
